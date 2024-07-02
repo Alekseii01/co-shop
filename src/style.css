@@ -730,3 +730,30 @@ input[type="checkbox"]:checked + label {
 .filter {
   padding-right: 15px;
 }
+
+.product-h1 {
+  max-width: 700px;
+  line-height: 68px;
+  text-align: start;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: 300;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: 300;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.filters_options_types {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 15px;
+  font-size: .9em;
+  position: relative;
+  font-family: 'Rubik';
+} 

@@ -7,12 +7,18 @@ export const loadFilterForm = (): string => `
         <div class="route-line description"><span class="line"></span></div>
         <div class="filters_options">
             <div class="body-1 font-700">Brands</div>
-            <div class="filters_options_types">
-                <input type="checkbox" id="ascending" name="brand" value="Ascending">
-                <label for="ascending">Ascending</label>
-                <input type="checkbox" id="descending" name="brand" value="Descending">
-                <label for="descending">Descending</label>
+            <div class="filters_sort_options">
             </div>
+                   <div class="route-line description"><span class="line"></span></div>
+        <div class="filters_sort">
+            <div class="body-1 font-700">Sort by Price</div>
+            <div class="filters_sort_options">
+                <input type="radio" id="sort-ascending" name="sort" value="ascending" checked>
+                <label class="filters_options_types" for="sort-ascending">Ascending</label>
+                <input type="radio" id="sort-descending" name="sort" value="descending">
+                <label class="filters_options_types" for="sort-descending">Descending</label>
+            </div>
+        </div>
         </div>
         <div class="route-line description"><span class="line"></span></div>
         <div class="filters_slider">

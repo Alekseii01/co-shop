@@ -26,7 +26,7 @@ export async function loadProductDetailPage(productId: string): Promise<string> 
                ${renderProductImages(product)}
                <div class="product-info">
                     <div class="product-header">
-                    <h1>${product.title}</h1>
+                    <h1 class="product-h1">${product.title}</h1>
                       <div class="rating">
                         ${starsHtml}
                         <span>${roundedRating}/5</span>

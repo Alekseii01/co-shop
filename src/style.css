@@ -764,6 +764,31 @@ input[type="radio"] {
   justify-content: space-evenly;
 }
 
+.not-found {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.not-found-title {
+  font-size: 5em;
+  font-weight: 600;
+}
+
+.not-found-sub {
+  padding-top: 40px;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.not-found-description {
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: .7em;
+}
+
 @media (max-width: 1340px) {
   .product-info {
     margin: 0 30px;

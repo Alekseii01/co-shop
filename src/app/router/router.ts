@@ -2,6 +2,7 @@ import Navigo, { Match } from 'navigo';
 import { loadHomePage } from '../pages/homePage';
 import { loadCategoryPage } from '../pages/categoryPage';
 import { loadProductDetailPage } from '../pages/productDetailPage';
+import { load404Page } from '../pages/404Page';
 
 const router = new Navigo('/');
 
@@ -22,6 +23,7 @@ router
         const productId = match?.data?.productId as string;
         render(loadProductDetailPage(productId));
     })
+    .notFound(() => render(load404Page()))
     .resolve();
 
 export default router;

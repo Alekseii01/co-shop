@@ -1,13 +1,6 @@
 import { defineConfig } from 'vite'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/co-shop/',
-  build: {
-    outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: 'index.html'
-      }
-    }
-  }
+   base: '/vite-deploy-demo/'
 })

@@ -29,6 +29,7 @@
     "**/*": "prettier . --write --ignore-unknown"
   },
   "dependencies": {
+    "firebase": "^10.12.3",
     "navigo": "^8.11.1"
   }
 }

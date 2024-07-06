@@ -4,6 +4,7 @@ import { loadCategoryPage } from '../pages/categoryPage';
 import { loadProductDetailPage } from '../pages/productDetailPage';
 import { load404Page } from '../pages/404Page';
 import { loadLogInPage } from '../pages/logInPage';
+import { singupPage } from '../pages/singupPage';
 
 const router = new Navigo('/');
 
@@ -24,7 +25,8 @@ router
         const productId = match?.data?.productId as string;
         render(loadProductDetailPage(productId));
     })
-    .on('/user', () => render(loadLogInPage()))
+    .on('login', () => render(loadLogInPage()))
+    .on('singup', () => render(singupPage()))
     .notFound(() => render(load404Page()))
     .resolve();
 
